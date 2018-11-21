@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7d95b5"
+    tools:context="com.example.user562.sudoku.GameActivity">
+
+    <ImageView
+        android:src="@drawable/bgimage"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_stage"
+            android:text="Stage "
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Chronometer
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"/>
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:stretchColumns="1,2,3,5,6,7,9,10,11">
+        <TableRow>
+            <TextView android:layout_span="13" android:layout_height="1dp" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt1" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt2" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt3" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt4" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt5" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt6" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt7" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt8" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt9" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt11" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt12" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt13" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt14" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt15" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt16" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt17" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt18" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt19" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt21" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt22" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt23" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt24" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt25" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt26" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt27" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt28" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt29" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_span="13" android:layout_height="1dp" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt31" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt32" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt33" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt34" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt35" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt36" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt37" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt38" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt39" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt41" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt42" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt43" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt44" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt45" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt46" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt47" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt48" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt49" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt51" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt52" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt53" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt54" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt55" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt56" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt57" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt58" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt59" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_span="13" android:layout_height="1dp" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt61" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt62" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt63" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt64" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt65" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt66" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt67" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt68" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt69" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt71" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt72" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt73" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt74" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt75" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt76" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt77" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt78" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt79" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt81" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt82" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt83" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt84" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt85" android:background="@drawable/bg1"/>
+            <TextView android:id="@+id/txt86" android:background="@drawable/bg1"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+            <TextView android:id="@+id/txt87" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt88" android:background="@drawable/bg"/>
+            <TextView android:id="@+id/txt89" android:background="@drawable/bg"/>
+            <TextView android:layout_width="1dp" android:layout_height="match_parent" android:background="@android:color/black"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_span="13" android:layout_height="1dp" android:background="@android:color/black"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
