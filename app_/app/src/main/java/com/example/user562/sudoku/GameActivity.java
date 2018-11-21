@@ -14,6 +14,7 @@ public class GameActivity extends AppCompatActivity {
 
     TextView [][]arr = null;
     Chronometer time = null;
+    int idx,jdx;
     int stage ;
     int [][][]p = {{{0,0,3,7,0,4,5,0,0},{0,2,0,0,0,0,0,6,0},{0,8,0,3,1,6,0,2,0},
                      {0,0,0,0,0,0,0,0,0},{3,7,0,0,0,0,0,9,2},{2,0,4,0,0,0,8,0,6},
@@ -138,11 +139,13 @@ public class GameActivity extends AppCompatActivity {
                 if(p[stage-1][i][j] != 0)
                     arr[i][j].setText(String.valueOf(p[stage - 1][i][j]));
                 else {
+                    idx = i;
+                    jdx = j;
                     arr[i][j].setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             Intent intent = new Intent(GameActivity.this, InputActivity.class);
-                            startActivity(intent);
+                            startActivityForResult(intent,0);
 
                         }
                     });
@@ -151,5 +154,12 @@ public class GameActivity extends AppCompatActivity {
         }
 
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        int digit = data.getIntExtra("DIGIT",0);
+        arr[idx][jdx].setText(String.valueOf(digit));
     }
 }
