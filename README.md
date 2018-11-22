@@ -22,9 +22,9 @@ Tensorflow 오픈소스 라이브러리와 안드로이드 스튜디오를 활�
 
 ![image](https://user-images.githubusercontent.com/42924998/48907795-e85c9500-eeab-11e8-864d-20b788870847.jpg)
 
-![image](https://user-images.githubusercontent.com/42924998/48907832-02967300-eeac-11e8-9f78-1a30054242e9.jpg)
+![image](https://user-images.githubusercontent.com/42924998/48908052-98ca9900-eeac-11e8-82be-6d52dbbe5ac5.jpg)
 
-![image](https://user-images.githubusercontent.com/42924998/48907847-0fb36200-eeac-11e8-99ba-6771388103f4.jpg)
+![image](https://user-images.githubusercontent.com/42924998/48908072-ada72c80-eeac-11e8-8b98-cf25a211b888.jpg)
 
 ## 4. 라이센스
 
