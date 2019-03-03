@@ -12,6 +12,7 @@ Tensorflow 오픈소스 라이브러리와 안드로이드 스튜디오를 활�
   2. 이다인 ( dlekdls02@naver.com )
   
   3. 김정환 ( dkakdfd@naver.com)
+  수정해봄
 	
 	
 ## 3. 실행방법
